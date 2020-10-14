@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My CRUD in NodeJS</title>
+</head>
+<body>
+
+<h2>Registros<h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Telefone</td>
+                <td>Sexo</td>
+                <td>Data Nascimento</td>
+                <td>Endereço</td>
+                <td>Numero</td>
+                <td>Cidade</td>
+                <td>Estados</td>
+            </tr>
+        </thead>
+        <tbody>
+        <% Casdastro.forEach(function(details) { %>
+            <tr>
+                <td><%= details.name %></td>
+                <td><%= details.telefone %></td>
+                <td><%= details.sexo %></td>
+                <td><%= details.data nascimento %></td>
+                <td><%= details.endereco %></td>
+                <td><%= details.numero %></td>
+                <td><%= details.cidade %></td>
+                <td><%= details.estados %></td>
+            </tr>
+            <% }) %>
+        </tbody>
+        <button><a href="/">Voltar</a></button>
+</body>
+</html>
